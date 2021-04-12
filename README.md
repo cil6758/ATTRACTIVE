@@ -7,3 +7,6 @@ The source code of ATTRACTIVE
    (2) The "core" directoy includes the code that is used to train the classification models.
 
 3. The "autoupdate" directory includes the code that is used to update the database automatically.
+
+4. data.zip includes the training data and the validation data.
+
