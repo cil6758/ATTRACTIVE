@@ -123,7 +123,7 @@ for oIter,kwIter in dict_search_target.items():
 		s_db = "pmc"
 		s_query = s_key_word + "%20stem+cell+differentiation"
 		s_esearch_retmode = "json"
-		s_reldate = "400"
+		s_reldate = "200"
 		s_datetype= "pdat"
 		s_retmax = "100000"
 		s_usehistory = "y"
