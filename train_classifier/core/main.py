@@ -19,7 +19,7 @@ dict_article = {}
 
 #Train title model
 print("Parsing file...")
-dict_article = Parser.Parse_title(s_base + "train_organ_title.tsv")
+dict_article = Parser.Parse_title(s_base + "train_organ_title_v3.tsv")
 print("File preprocessing...")
 FileProcess.ProcessText(dict_article, "title")
 print("Train cosine model based on LDA method")
@@ -28,7 +28,7 @@ Train.Train_cos_lda(dict_article, "title")	#Use LDA and cosine similarity to tra
 
 #Train abstract model
 print("Parsing file...")
-dict_article = Parser.Parse_abstract(s_base + "train_organ_abstract.tsv")
+dict_article = Parser.Parse_abstract(s_base + "train_organ_abstract_v3.tsv")
 print("File preprocessing...")
 FileProcess.ProcessText(dict_article, "abstract")
 print("Train cosine model based on LDA method")
