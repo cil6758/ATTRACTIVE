@@ -1,7 +1,7 @@
 #Developer: Yuan-Mao Hung
 #Date: 2021/4/8
 #Description: autoupdate.py includes the methods to update the database automatically
-import http.client	#for solving "IincompleteRead error"
+import http.client	#for solving "IncompleteRead error"
 import json
 import os
 import nltk
@@ -21,8 +21,8 @@ from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from urllib.request import urlopen
 from website.models import Article
 
-http.client.HTTPConnection._http_vsn = 10  #for solving "IincompleteRead error"
-http.client.HTTPConnection._http_vsn_str = 'HTTP/1.0'	#for solving "IincompleteRead error"
+http.client.HTTPConnection._http_vsn = 10  #for solving "IncompleteRead error"
+http.client.HTTPConnection._http_vsn_str = 'HTTP/1.0'	#for solving "IncompleteRead error"
 
 l_stopwords = stopwords.words("english")
 l_stopwords.append("via")
